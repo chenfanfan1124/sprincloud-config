@@ -1,3 +1,6 @@
+client:
+  info: version-2
+  
 server:
   port: 3355
 
@@ -22,8 +25,7 @@ eureka:
     instance-id: config-client3355
     prefer-ip-address: true                 
  
-client:
-  info: version-1
+
   
 mybatis:
   mapperLocations: classpath:mapper/*.xml
