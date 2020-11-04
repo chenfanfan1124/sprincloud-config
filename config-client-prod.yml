@@ -1,18 +1,9 @@
 client:
   info: version-3
-  
-server:
-  port: 3355
-
+ 
 spring:
   application:
     name: config-client   
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://localhost:3306/db2019?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: root
-    password: 123456
   
 eureka:
   client:
@@ -20,13 +11,3 @@ eureka:
     fetchRegistry: true         
     service-url:
       defaultZone: http://localhost:7001/eureka    
-
-  instance:
-    instance-id: config-client3355
-    prefer-ip-address: true                 
- 
-
-  
-mybatis:
-  mapperLocations: classpath:mapper/*.xml
-  type-aliases-package: com.atguigu.springcloud.entities
